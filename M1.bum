@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525348105247" org.eventb.texttools.text_representation="machine M1 sees C1&#10;variables registered quiz author participant session host quiz_question session_quiz correct option given_answer current question_num&#10;invariants&#10;&#9;@inv1 registered ⊆  USER&#10;&#9;@inv2 quiz ⊆  QUIZ&#10;&#9;@inv8 session ⊆  SESSION&#10;&#9;@inv9 session_quiz ⊆  session → quiz&#10;&#9;@inv4 host ⊆  session → registered&#10;&#9;@inv3 author ⊆  quiz → registered&#10;&#9;@inv5 participant ⊆  session ↔ USER&#10;&#9;@inv6 quiz_question ⊆  quiz ↔ QUESTION&#10;&#9;@inv69 option ⊆  QUESTION ↔ ANSWER_OPTION&#10;&#9;@inv7 ∀x·x∈QUESTION⇒card({x}◁quiz_question) ≤ 4 ∧ card({x}◁quiz_question) ≥ 2&#10;&#9;@inv57 correct ⊆  QUESTION → ANSWER_OPTION&#10;&#9;@inv420 ∀q·q∈ran(quiz_question) ⇒ correct(q) ∈ option[{q}]&#10;&#9;@invvvv current ⊆ session → QUESTION&#10;&#9;@help question_num ⊆  QUESTION → ℕ&#10;events&#10;  event INITIALISATION&#10;  end&#10;  event GiveAnswer&#10;  &#9;any s q p where&#10;  &#9;&#9;@grd1 s ∈ session&#10;  &#9;&#9;@grd5 p ∈ USER&#10;  &#9;&#9;@grd2 q ∈ ran(quiz_question)&#10;  &#9;&#9;@grd3 p ∈ participant[{s}]&#10;  &#9;&#9;@grd4 q =current(s)&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.seesContext name="_X5Qv4E6-EeiRt8NzVHsCog" org.eventb.core.target="C1"/>
+<org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+<org.eventb.core.variable name="_X5R-AE6-EeiRt8NzVHsCog" org.eventb.core.identifier="registered"/>
+<org.eventb.core.variable name="_X5R-AU6-EeiRt8NzVHsCog" org.eventb.core.identifier="quiz"/>
+<org.eventb.core.variable name="_X5R-Ak6-EeiRt8NzVHsCog" org.eventb.core.identifier="author"/>
+<org.eventb.core.variable name="_X5SlEE6-EeiRt8NzVHsCog" org.eventb.core.identifier="participant"/>
+<org.eventb.core.variable name="_X5SlEU6-EeiRt8NzVHsCog" org.eventb.core.identifier="session"/>
+<org.eventb.core.variable name="_X5SlEk6-EeiRt8NzVHsCog" org.eventb.core.identifier="host"/>
+<org.eventb.core.variable name="_X5SlE06-EeiRt8NzVHsCog" org.eventb.core.identifier="quiz_question"/>
+<org.eventb.core.variable name="_X5TMIE6-EeiRt8NzVHsCog" org.eventb.core.identifier="session_quiz"/>
+<org.eventb.core.variable name="_X5TMIU6-EeiRt8NzVHsCog" org.eventb.core.identifier="correct"/>
+<org.eventb.core.variable name="_X5TMIk6-EeiRt8NzVHsCog" org.eventb.core.identifier="option"/>
+<org.eventb.core.variable name="_X5TzME6-EeiRt8NzVHsCog" org.eventb.core.identifier="given_answer"/>
+<org.eventb.core.variable name="_X5TzMU6-EeiRt8NzVHsCog" org.eventb.core.identifier="current"/>
+<org.eventb.core.invariant name="_X5UaQE6-EeiRt8NzVHsCog" org.eventb.core.label="inv1" org.eventb.core.predicate="registered ⊆  USER"/>
+<org.eventb.core.invariant name="_X5VoYE6-EeiRt8NzVHsCog" org.eventb.core.label="inv2" org.eventb.core.predicate="quiz ⊆  QUIZ"/>
+<org.eventb.core.invariant name="_X5VoYU6-EeiRt8NzVHsCog" org.eventb.core.label="inv8" org.eventb.core.predicate="session ⊆  SESSION"/>
+<org.eventb.core.invariant name="_X5WPcE6-EeiRt8NzVHsCog" org.eventb.core.label="inv9" org.eventb.core.predicate="session_quiz ⊆  session → quiz"/>
+<org.eventb.core.invariant name="_X5W2gE6-EeiRt8NzVHsCog" org.eventb.core.label="inv4" org.eventb.core.predicate="host ⊆  session → registered"/>
+<org.eventb.core.invariant name="_X5XdkE6-EeiRt8NzVHsCog" org.eventb.core.label="inv3" org.eventb.core.predicate="author ⊆  quiz → registered"/>
+<org.eventb.core.invariant name="_X5XdkU6-EeiRt8NzVHsCog" org.eventb.core.label="inv5" org.eventb.core.predicate="participant ⊆  session ↔ USER"/>
+<org.eventb.core.invariant name="_X5YEoE6-EeiRt8NzVHsCog" org.eventb.core.label="inv6" org.eventb.core.predicate="quiz_question ⊆  quiz ↔ QUESTION"/>
+<org.eventb.core.invariant name="_X5YEoU6-EeiRt8NzVHsCog" org.eventb.core.label="inv69" org.eventb.core.predicate="option ⊆  QUESTION ↔ ANSWER_OPTION"/>
+<org.eventb.core.invariant name="_X5YrsE6-EeiRt8NzVHsCog" org.eventb.core.label="inv7" org.eventb.core.predicate="∀x·x∈QUESTION⇒card({x}◁quiz_question) ≤ 4 ∧ card({x}◁quiz_question) ≥ 2"/>
+<org.eventb.core.invariant name="_X5ZSwE6-EeiRt8NzVHsCog" org.eventb.core.label="inv57" org.eventb.core.predicate="correct ⊆  QUESTION → ANSWER_OPTION"/>
+<org.eventb.core.invariant name="_X5ZSwU6-EeiRt8NzVHsCog" org.eventb.core.label="inv420" org.eventb.core.predicate="∀q·q∈ran(quiz_question) ⇒ correct(q) ∈ option[{q}]"/>
+<org.eventb.core.invariant name="_X5Z50E6-EeiRt8NzVHsCog" org.eventb.core.label="invvvv" org.eventb.core.predicate="current ⊆ session → QUESTION"/>
+<org.eventb.core.event name="_X5Z50U6-EeiRt8NzVHsCog" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="GiveAnswer">
+<org.eventb.core.parameter name="_X5ag4E6-EeiRt8NzVHsCog" org.eventb.core.identifier="s"/>
+<org.eventb.core.parameter name="_X5ag4U6-EeiRt8NzVHsCog" org.eventb.core.identifier="q"/>
+<org.eventb.core.parameter name="_X5bH8E6-EeiRt8NzVHsCog" org.eventb.core.identifier="p"/>
+<org.eventb.core.guard name="_X5bH8U6-EeiRt8NzVHsCog" org.eventb.core.label="grd1" org.eventb.core.predicate="s ∈ session"/>
+<org.eventb.core.guard name="_X5bvAE6-EeiRt8NzVHsCog" org.eventb.core.label="grd5" org.eventb.core.predicate="p ∈ USER"/>
+<org.eventb.core.guard name="_X5bvAU6-EeiRt8NzVHsCog" org.eventb.core.label="grd2" org.eventb.core.predicate="q ∈ ran(quiz_question)"/>
+<org.eventb.core.guard name="_gXnm0E6_EeiRt8NzVHsCog" org.eventb.core.label="grd3" org.eventb.core.predicate="p ∈ participant[{s}]"/>
+<org.eventb.core.guard name="_gXoN4E6_EeiRt8NzVHsCog" org.eventb.core.label="grd4" org.eventb.core.predicate="q =current(s)"/>
+</org.eventb.core.event>
+<org.eventb.core.variable name="_gXoN4U6_EeiRt8NzVHsCog" org.eventb.core.identifier="question_num"/>
+<org.eventb.core.invariant name="_gXo08E6_EeiRt8NzVHsCog" org.eventb.core.label="help" org.eventb.core.predicate="question_num ⊆  QUESTION → ℕ"/>
+</org.eventb.core.machineFile>
