@@ -1,26 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.psFile>
-<org.eventb.core.psStatus name="inv12/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="14" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="inv14/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv12/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv13/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psBroken="true" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv15/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="16" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="INITIALISATION/inv16/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="16" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="GiveAnswer/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="14" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="ShareQuiz/grd6/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="ShareQuiz/inv16/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="16" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="HostQuiz/inv4/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="17" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="HostQuiz/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="17" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="HostQuiz/inv7/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="17" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="HostQuiz/inv8/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="17" org.eventb.core.psManual="true"/>
-<org.eventb.core.psStatus name="AnonJoinQuiz/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
-<org.eventb.core.psStatus name="RegisteredJoinQuiz/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="18" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv12/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="inv14/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv12/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv13/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psBroken="true" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="INITIALISATION/inv15/INV" org.eventb.core.confidence="-99" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="GiveAnswer/grd4/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RemoveQuiz/grd3/WD" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CreateQuestion/grd5/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CreateQuestion/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CreateQuestion/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CreateQuestion/inv14/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="CreateQuestion/inv15/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UpdateQuestion/grd5/WD" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UpdateQuestion/inv13/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UpdateQuestion/inv14/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="UpdateQuestion/inv15/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RemoveQuestion/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RemoveQuestion/inv12/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RemoveQuestion/inv13/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RemoveQuestion/inv14/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
+<org.eventb.core.psStatus name="RemoveQuestion/inv15/INV" org.eventb.core.confidence="0" org.eventb.core.poStamp="19" org.eventb.core.psManual="false"/>
 </org.eventb.core.psFile>

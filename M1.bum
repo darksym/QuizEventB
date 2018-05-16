@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1526478559869" org.eventb.texttools.text_representation="machine M1 sees C1&#10;&#10;variables registered quiz author participant session host quiz_question session_quiz correct option given_answer current question_num can_access&#10;&#10;invariants&#10;  @inv1 registered ⊆ USER&#10;  @inv2 quiz ⊆ QUIZ&#10;  @inv3 session ⊆ SESSION&#10;  @inv4 host ∈ session → registered&#10;  @inv5 author ∈ quiz → registered&#10;  @inv6 participant ∈ session ↔ USER&#10;  @inv7 session_quiz ∈ session → quiz&#10;  @inv8 current ∈ session → QUESTION&#10;  @inv9 given_answer ∈ USER ⇸ ANSWER_OPTION&#10;  @inv10 quiz_question ∈ quiz ↔ QUESTION&#10;  @inv11 option ∈ QUESTION ↔ ANSWER_OPTION&#10;  @inv12 ∀x·x∈QUESTION⇒card({x}◁option) ≤ 4 ∧ card({x}◁option) ≥ 2&#10;  @inv13 correct ∈ QUESTION → ANSWER_OPTION&#10;  @inv14 ∀q·q∈ran(quiz_question) ⇒ correct(q) ∈ option[{q}]&#10;  @inv15 question_num ∈ QUESTION → ℕ&#10;  @inv16 can_access ∈ registered↔quiz&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 registered ≔ ∅&#10;      @act2 quiz ≔ ∅&#10;      @act3 author ≔ ∅&#10;      @act4 participant ≔ ∅&#10;      @act5 session ≔ ∅&#10;      @act6 host ≔ ∅&#10;      @act7 quiz_question ≔  ∅&#10;      @act8 session_quiz ≔ ∅&#10;      @act9 correct ≔ ∅&#10;      @act10 option ≔ ∅&#10;      @act11 given_answer ≔ ∅&#10;      @act12 current ≔ ∅&#10;      @act13 question_num ≔ ∅&#10;      @act14 can_access ≔ ∅&#10;  end&#10;&#10;  event GiveAnswer&#10;    any s q p&#10;    where&#10;      @grd1 s ∈ session&#10;      @grd5 p ∈ USER&#10;      @grd2 q ∈ ran(quiz_question)&#10;      @grd3 p ∈ participant[{s}]&#10;      @grd4 q =current(s)&#10;  end&#10;&#10;  event ShareQuiz&#10;    any a u q&#10;    where&#10;      @grd1 a ∈ USER&#10;      @grd2 u ∈ USER&#10;      @grd3 q ∈ QUIZ&#10;      @grd4 a ∈ registered&#10;      @grd5 u ∈ registered&#10;      @grd6 author(q) = a&#10;    then&#10;      @act1 can_access ≔  can_access ∪ {u↦q}&#10;  end&#10;&#10;  event HostQuiz&#10;    any h q s&#10;    where&#10;      @grd1 h ∈ registered&#10;      @grd2 q ∈ quiz&#10;      @grd3 q ∈ ran({h}◁can_access)&#10;      @grd4 s ∈ SESSION&#10;    then&#10;      @act1 session ≔ session ∪ {s}&#10;      @act2 host ≔  host ∪  {s↦h}&#10;      @act3 session_quiz ≔  session_quiz ∪  {s↦q}&#10;  end&#10;&#10;  event AnonJoinQuiz&#10;    any p s&#10;    where&#10;      @grd1 p ∈ USER&#10;      @grd2 s ∈ session&#10;      @grd3 ran({s}◁current) = ∅&#10;    then&#10;      @act1 participant ≔ participant ∪ {s↦p}&#10;  end&#10;&#10;  event RegisteredJoinQuiz&#10;    any p s&#10;    where&#10;      @grd1 p ∈ registered&#10;      @grd2 s ∈ session&#10;      @grd3 ran({s}◁current) = ∅&#10;    then&#10;      @act1 participant ≔ participant ∪ {s↦p}&#10;  end&#10;end&#10;" version="5">
+<org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1526479821422" org.eventb.texttools.text_representation="machine M1 sees C1&#10;&#10;variables registered quiz author participant session host quiz_question session_quiz correct option given_answer current question_num&#10;&#10;invariants&#10;  @inv1 registered ⊆ USER&#10;  @inv2 quiz ⊆ QUIZ&#10;  @inv3 session ⊆ SESSION&#10;  @inv4 host ∈ session → registered&#10;  @inv5 author ∈ quiz → registered&#10;  @inv6 participant ∈ session ↔ USER&#10;  @inv7 session_quiz ∈ session → quiz&#10;  @inv8 current ∈ session → QUESTION&#10;  @inv9 given_answer ∈ USER ⇸ ANSWER_OPTION&#10;  @inv10 quiz_question ∈ quiz ↔ QUESTION&#10;  @inv11 option ∈ QUESTION ↔ ANSWER_OPTION&#10;  @inv12 ∀x·x∈QUESTION⇒card({x}◁option) ≤ 4 ∧ card({x}◁option) ≥ 2&#10;  @inv13 correct ∈ QUESTION → ANSWER_OPTION&#10;  @inv14 ∀q·q∈ran(quiz_question) ⇒ correct(q) ∈ option[{q}]&#10;  @inv15 question_num ∈ QUESTION → ℕ&#10;&#10;events&#10;  event INITIALISATION&#10;    then&#10;      @act1 registered ≔ ∅&#10;      @act2 quiz ≔ ∅&#10;      @act3 author ≔ ∅&#10;      @act4 participant ≔ ∅&#10;      @act5 session ≔ ∅&#10;      @act6 host ≔ ∅&#10;      @act7 quiz_question ≔  ∅&#10;      @act8 session_quiz ≔ ∅&#10;      @act9 correct ≔ ∅&#10;      @act10 option ≔ ∅&#10;      @act11 given_answer ≔ ∅&#10;      @act12 current ≔ ∅&#10;      @act13 question_num ≔ ∅&#10;  end&#10;&#10;  event GiveAnswer&#10;    any s q p&#10;    where&#10;      @grd1 s ∈ session&#10;      @grd5 p ∈ USER&#10;      @grd2 q ∈ ran(quiz_question)&#10;      @grd3 p ∈ participant[{s}]&#10;      @grd4 q =current(s)&#10;  end&#10;&#10;  event RemoveQuiz&#10;  &#9;any q u&#10;  &#9;where&#10;&#9;  @grd1 q ∈ quiz&#10;&#9;  @grd2 u ∈ registered&#10;&#9;  @grd3 author(q) = u&#10;&#9;  @grd4 q ∉ ran(session_quiz)&#10;&#9;then&#10;&#9;  @act1 author ≔ author ⩤ {q}&#10;&#9;  @act2 question_num ≔ question_num ⩤ quiz_question[q]&#10;&#9;  @act3 correct ≔ correct ⩤   quiz_question[q]&#10;&#9;  @act4 option ≔ option ⩤ quiz_question[q]&#10;&#9;  @act5 quiz_question ≔ quiz_question ⩤ {q}&#10;&#9;  @act6 quiz ≔ quiz ∖ q&#10;  end&#10;&#10;  event CreateQuestion&#10;    any qz qs o c n&#10;    where&#10;      @grd1 qz ∈ quiz&#10;      @grd2 qs ∈ QUESTION&#10;      @grd3 o ⊆ ANSWER_OPTION&#10;      @grd4 c ∈ o&#10;      @grd5 card(option) ≥ 2 ∧ card(option) ≤ 4&#10;      @grd6 n ∈ ℕ&#10;      @grd7 n ∉ question_num[ran({qz} ◁ quiz_question)]&#10;      @grd8 qs ∉ quiz_question[{qz}]&#10;      @grd9 q ∉ ran(session_quiz)&#10;    then&#10;      @act1 quiz_question ≔ quiz_question ∪ {qz↦qs}&#10;      @act2 question_num(qs) ≔ n&#10;      @act3 correct(qs) ≔ c&#10;      @act4 option ≔ option ∪ (qz × o)&#10;  end&#10;&#10;  event UpdateQuestion&#10;    any qz qs o c n&#10;    where&#10;      @grd1 qz ∈ quiz&#10;      @grd2 qs ∈ QUESTION&#10;      @grd3 o ⊆ ANSWER_OPTION&#10;      @grd4 c ∈ o&#10;      @grd5 card(option) ≥ 2 ∧ card(option) ≤ 4&#10;      @grd6 n ∈ ℕ&#10;      @grd7 n ∉ question_num[ran({qz} ◁ quiz_question)]&#10;      @grd8 qs ∈ quiz_question[{qz}]&#10;      @grd9 qz ∉ ran(session_quiz)&#10;    then&#10;      @act2 question_num(qs) ≔ n&#10;      @act3 correct(qs) ≔ c&#10;      @act4 option ≔ ({qs} ⩤ option) ∪ (qz × o)&#10;  end&#10;&#10;  event RemoveQuestion&#10;    any qs&#10;    where&#10;      @grd1 qs ∈ ran(quiz_question)&#10;      @grd2 qs ∈ dom(question_num)&#10;      @grd3 dom(quiz_question ▷ {qs}) ⊈ ran(session_quiz)&#10;    then&#10;      @act1 option ≔ {qs} ⩤ option&#10;      @act2 correct ≔ {qs} ⩤ correct&#10;      @act3 question_num ≔ {qs} ⩤ question_num&#10;      @act4 quiz_question ≔ quiz_question ▷ {qs}&#10;  end&#10;&#10;  event AnswerQuestion&#10;    any s u a&#10;    where&#10;      @grd1 s ∈ session&#10;  end&#10;end&#10;" version="5">
 <org.eventb.core.seesContext name="_X5Qv4E6-EeiRt8NzVHsCog" org.eventb.core.target="C1"/>
 <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
 <org.eventb.core.action name="'" org.eventb.core.assignment="registered ≔ ∅" org.eventb.core.label="act1"/>
@@ -15,7 +15,6 @@
 <org.eventb.core.action name="_Ng-tB1j8EeiQk6HEm_muNQ" org.eventb.core.assignment="given_answer ≔ ∅" org.eventb.core.label="act11"/>
 <org.eventb.core.action name="_NhEzoFj8EeiQk6HEm_muNQ" org.eventb.core.assignment="current ≔ ∅" org.eventb.core.label="act12"/>
 <org.eventb.core.action name="_NhEzoVj8EeiQk6HEm_muNQ" org.eventb.core.assignment="question_num ≔ ∅" org.eventb.core.label="act13"/>
-<org.eventb.core.action name="_NhEzoVj8EeiQk6HEm_muNR" org.eventb.core.assignment="can_access ≔ ∅" org.eventb.core.label="act14"/>
 </org.eventb.core.event>
 <org.eventb.core.variable name="_X5R-AE6-EeiRt8NzVHsCog" org.eventb.core.identifier="registered"/>
 <org.eventb.core.variable name="_X5R-AU6-EeiRt8NzVHsCog" org.eventb.core.identifier="quiz"/>
@@ -55,46 +54,73 @@
 </org.eventb.core.event>
 <org.eventb.core.variable name="_gXoN4U6_EeiRt8NzVHsCog" org.eventb.core.identifier="question_num"/>
 <org.eventb.core.invariant name="_gXo08E6_EeiRt8NzVHsCog" org.eventb.core.label="inv15" org.eventb.core.predicate="question_num ∈ QUESTION → ℕ"/>
-<org.eventb.core.variable name="_hHy0MFj_EeiQk6HEm_muNQ" org.eventb.core.identifier="can_access"/>
-<org.eventb.core.invariant name="_hHy0MVj_EeiQk6HEm_muNQ" org.eventb.core.label="inv16" org.eventb.core.predicate="can_access ∈ registered↔quiz"/>
-<org.eventb.core.event name="_hHy0Mlj_EeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ShareQuiz">
-<org.eventb.core.parameter name="_hHy0M1j_EeiQk6HEm_muNQ" org.eventb.core.identifier="a"/>
+<org.eventb.core.event name="_hHy0Mlj_EeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RemoveQuiz">
+<org.eventb.core.parameter name="_hHy0M1j_EeiQk6HEm_muNQ" org.eventb.core.identifier="q"/>
 <org.eventb.core.parameter name="_hHy0NFj_EeiQk6HEm_muNQ" org.eventb.core.identifier="u"/>
-<org.eventb.core.parameter name="_hHy0NVj_EeiQk6HEm_muNQ" org.eventb.core.identifier="q"/>
-<org.eventb.core.guard name="_hHy0Nlj_EeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="a ∈ USER"/>
-<org.eventb.core.guard name="_hHy0N1j_EeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈ USER"/>
-<org.eventb.core.guard name="_hHy0OFj_EeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="q ∈ QUIZ"/>
-<org.eventb.core.guard name="_hH460Fj_EeiQk6HEm_muNQ" org.eventb.core.label="grd4" org.eventb.core.predicate="a ∈ registered"/>
-<org.eventb.core.guard name="_hH460Vj_EeiQk6HEm_muNQ" org.eventb.core.label="grd5" org.eventb.core.predicate="u ∈ registered"/>
-<org.eventb.core.guard name="_hH460lj_EeiQk6HEm_muNQ" org.eventb.core.label="grd6" org.eventb.core.predicate="author(q) = a"/>
-<org.eventb.core.action name="_hH4601j_EeiQk6HEm_muNQ" org.eventb.core.assignment="can_access ≔  can_access ∪ {u↦q}" org.eventb.core.label="act1"/>
+<org.eventb.core.guard name="_hHy0Nlj_EeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="q ∈ quiz"/>
+<org.eventb.core.guard name="_hHy0N1j_EeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="u ∈ registered"/>
+<org.eventb.core.guard name="_hHy0OFj_EeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="author(q) = u"/>
+<org.eventb.core.guard name="_hH460Fj_EeiQk6HEm_muNQ" org.eventb.core.label="grd4" org.eventb.core.predicate="q ∉ ran(session_quiz)"/>
+<org.eventb.core.action name="_NhEzoVj8EeiQk6HEm_muNR" org.eventb.core.assignment="author ≔ author ⩤ {q}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_hH4601j_EeiQk6HEm_muNQ" org.eventb.core.assignment="question_num ≔ question_num ⩤ quiz_question[q]" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_YqlagFkDEeiQk6HEm_muNQ" org.eventb.core.assignment="correct ≔ correct ⩤   quiz_question[q]" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_YqlagVkDEeiQk6HEm_muNQ" org.eventb.core.assignment="option ≔ option ⩤ quiz_question[q]" org.eventb.core.label="act4"/>
+<org.eventb.core.action name="_YqlaglkDEeiQk6HEm_muNQ" org.eventb.core.assignment="quiz_question ≔ quiz_question ⩤ {q}" org.eventb.core.label="act5"/>
+<org.eventb.core.action name="_VCY55lkFEeiQk6HEm_muNQ" org.eventb.core.assignment="quiz ≔ quiz ∖ q" org.eventb.core.label="act6"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_YqfT4FkDEeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="HostQuiz">
-<org.eventb.core.parameter name="_YqfT4VkDEeiQk6HEm_muNQ" org.eventb.core.identifier="h"/>
-<org.eventb.core.parameter name="_YqfT4lkDEeiQk6HEm_muNQ" org.eventb.core.identifier="q"/>
-<org.eventb.core.parameter name="_YqfT41kDEeiQk6HEm_muNQ" org.eventb.core.identifier="s"/>
-<org.eventb.core.guard name="_YqfT5FkDEeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="h ∈ registered"/>
-<org.eventb.core.guard name="_YqfT5VkDEeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="q ∈ quiz"/>
-<org.eventb.core.guard name="_YqfT5lkDEeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="q ∈ ran({h}◁can_access)"/>
-<org.eventb.core.guard name="_YqfT51kDEeiQk6HEm_muNQ" org.eventb.core.label="grd4" org.eventb.core.predicate="s ∈ SESSION"/>
-<org.eventb.core.action name="_YqlagFkDEeiQk6HEm_muNQ" org.eventb.core.assignment="session ≔ session ∪ {s}" org.eventb.core.label="act1"/>
-<org.eventb.core.action name="_YqlagVkDEeiQk6HEm_muNQ" org.eventb.core.assignment="host ≔  host ∪  {s↦h}" org.eventb.core.label="act2"/>
-<org.eventb.core.action name="_YqlaglkDEeiQk6HEm_muNQ" org.eventb.core.assignment="session_quiz ≔  session_quiz ∪  {s↦q}" org.eventb.core.label="act3"/>
+<org.eventb.core.event name="_YqfT4FkDEeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="CreateQuestion">
+<org.eventb.core.parameter name="_hHy0NVj_EeiQk6HEm_muNQ" org.eventb.core.identifier="qz"/>
+<org.eventb.core.parameter name="_YqfT4VkDEeiQk6HEm_muNQ" org.eventb.core.identifier="qs"/>
+<org.eventb.core.parameter name="_YqfT4lkDEeiQk6HEm_muNQ" org.eventb.core.identifier="o"/>
+<org.eventb.core.parameter name="_YqfT41kDEeiQk6HEm_muNQ" org.eventb.core.identifier="c"/>
+<org.eventb.core.guard name="_hH460Vj_EeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="qz ∈ quiz"/>
+<org.eventb.core.guard name="_hH460lj_EeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="qs ∈ QUESTION"/>
+<org.eventb.core.guard name="_YqfT5FkDEeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="o ⊆ ANSWER_OPTION"/>
+<org.eventb.core.guard name="_YqfT5VkDEeiQk6HEm_muNQ" org.eventb.core.label="grd4" org.eventb.core.predicate="c ∈ o"/>
+<org.eventb.core.guard name="_YqfT5lkDEeiQk6HEm_muNQ" org.eventb.core.label="grd5" org.eventb.core.predicate="card(option) ≥ 2 ∧ card(option) ≤ 4"/>
+<org.eventb.core.guard name="_YqfT51kDEeiQk6HEm_muNQ" org.eventb.core.label="grd6" org.eventb.core.predicate="n ∈ ℕ"/>
+<org.eventb.core.parameter name="_VCY54VkFEeiQk6HEm_muNQ" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="_VCY541kFEeiQk6HEm_muNQ" org.eventb.core.label="grd7" org.eventb.core.predicate="n ∉ question_num[ran({qz} ◁ quiz_question)]"/>
+<org.eventb.core.guard name="_VCY55FkFEeiQk6HEm_muNQ" org.eventb.core.label="grd8" org.eventb.core.predicate="qs ∉ quiz_question[{qz}]"/>
+<org.eventb.core.guard name="_VCY55VkFEeiQk6HEm_muNQ" org.eventb.core.label="grd9" org.eventb.core.predicate="q ∉ ran(session_quiz)"/>
+<org.eventb.core.action name="_DwZYNlkGEeiQk6HEm_muNQ" org.eventb.core.assignment="quiz_question ≔ quiz_question ∪ {qz↦qs}" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_ctCfIFkKEeirWrnStoE3Sg" org.eventb.core.assignment="question_num(qs) ≔ n" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_ctCfIVkKEeirWrnStoE3Sg" org.eventb.core.assignment="correct(qs) ≔ c" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_ctCfIlkKEeirWrnStoE3Sg" org.eventb.core.assignment="option ≔ option ∪ (qz × o)" org.eventb.core.label="act4"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_VCY54FkFEeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AnonJoinQuiz">
-<org.eventb.core.parameter name="_VCY54VkFEeiQk6HEm_muNQ" org.eventb.core.identifier="p"/>
-<org.eventb.core.parameter name="_VCY54lkFEeiQk6HEm_muNQ" org.eventb.core.identifier="s"/>
-<org.eventb.core.guard name="_VCY541kFEeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ USER"/>
-<org.eventb.core.guard name="_VCY55FkFEeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="s ∈ session"/>
-<org.eventb.core.guard name="_VCY55VkFEeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="ran({s}◁current) = ∅"/>
-<org.eventb.core.action name="_VCY55lkFEeiQk6HEm_muNQ" org.eventb.core.assignment="participant ≔ participant ∪ {s↦p}" org.eventb.core.label="act1"/>
+<org.eventb.core.event name="_VCY54FkFEeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="UpdateQuestion">
+<org.eventb.core.parameter name="_VCY54lkFEeiQk6HEm_muNQ" org.eventb.core.identifier="qz"/>
+<org.eventb.core.parameter name="_DwZYMVkGEeiQk6HEm_muNQ" org.eventb.core.identifier="qs"/>
+<org.eventb.core.parameter name="_DwZYMlkGEeiQk6HEm_muNQ" org.eventb.core.identifier="o"/>
+<org.eventb.core.parameter name="_ctCfI1kKEeirWrnStoE3Sg" org.eventb.core.identifier="c"/>
+<org.eventb.core.parameter name="_ctCfJFkKEeirWrnStoE3Sg" org.eventb.core.identifier="n"/>
+<org.eventb.core.guard name="_DwZYM1kGEeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="qz ∈ quiz"/>
+<org.eventb.core.guard name="_DwZYNFkGEeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="qs ∈ QUESTION"/>
+<org.eventb.core.guard name="_DwZYNVkGEeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="o ⊆ ANSWER_OPTION"/>
+<org.eventb.core.guard name="_ctCfJVkKEeirWrnStoE3Sg" org.eventb.core.label="grd4" org.eventb.core.predicate="c ∈ o"/>
+<org.eventb.core.guard name="_ctCfJlkKEeirWrnStoE3Sg" org.eventb.core.label="grd5" org.eventb.core.predicate="card(option) ≥ 2 ∧ card(option) ≤ 4"/>
+<org.eventb.core.guard name="_ctCfJ1kKEeirWrnStoE3Sg" org.eventb.core.label="grd6" org.eventb.core.predicate="n ∈ ℕ"/>
+<org.eventb.core.guard name="_ctCfKFkKEeirWrnStoE3Sg" org.eventb.core.label="grd7" org.eventb.core.predicate="n ∉ question_num[ran({qz} ◁ quiz_question)]"/>
+<org.eventb.core.guard name="_ctCfKVkKEeirWrnStoE3Sg" org.eventb.core.label="grd8" org.eventb.core.predicate="qs ∈ quiz_question[{qz}]"/>
+<org.eventb.core.guard name="_ctIlwFkKEeirWrnStoE3Sg" org.eventb.core.label="grd9" org.eventb.core.predicate="qz ∉ ran(session_quiz)"/>
+<org.eventb.core.action name="_ctIlwVkKEeirWrnStoE3Sg" org.eventb.core.assignment="question_num(qs) ≔ n" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_ctIlwlkKEeirWrnStoE3Sg" org.eventb.core.assignment="correct(qs) ≔ c" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_ctIlw1kKEeirWrnStoE3Sg" org.eventb.core.assignment="option ≔ ({qs} ⩤ option) ∪ (qz × o)" org.eventb.core.label="act4"/>
 </org.eventb.core.event>
-<org.eventb.core.event name="_DwZYMFkGEeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RegisteredJoinQuiz">
-<org.eventb.core.parameter name="_DwZYMVkGEeiQk6HEm_muNQ" org.eventb.core.identifier="p"/>
-<org.eventb.core.parameter name="_DwZYMlkGEeiQk6HEm_muNQ" org.eventb.core.identifier="s"/>
-<org.eventb.core.guard name="_DwZYM1kGEeiQk6HEm_muNQ" org.eventb.core.label="grd1" org.eventb.core.predicate="p ∈ registered"/>
-<org.eventb.core.guard name="_DwZYNFkGEeiQk6HEm_muNQ" org.eventb.core.label="grd2" org.eventb.core.predicate="s ∈ session"/>
-<org.eventb.core.guard name="_DwZYNVkGEeiQk6HEm_muNQ" org.eventb.core.label="grd3" org.eventb.core.predicate="ran({s}◁current) = ∅"/>
-<org.eventb.core.action name="_DwZYNlkGEeiQk6HEm_muNQ" org.eventb.core.assignment="participant ≔ participant ∪ {s↦p}" org.eventb.core.label="act1"/>
+<org.eventb.core.event name="_DwZYMFkGEeiQk6HEm_muNQ" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="RemoveQuestion">
+<org.eventb.core.parameter name="_ctIlxFkKEeirWrnStoE3Sg" org.eventb.core.identifier="qs"/>
+<org.eventb.core.guard name="_ctIlxVkKEeirWrnStoE3Sg" org.eventb.core.label="grd1" org.eventb.core.predicate="qs ∈ ran(quiz_question)"/>
+<org.eventb.core.guard name="_ctIlxlkKEeirWrnStoE3Sg" org.eventb.core.label="grd2" org.eventb.core.predicate="qs ∈ dom(question_num)"/>
+<org.eventb.core.guard name="_ctIlx1kKEeirWrnStoE3Sg" org.eventb.core.label="grd3" org.eventb.core.predicate="dom(quiz_question ▷ {qs}) ⊈ ran(session_quiz)"/>
+<org.eventb.core.action name="_ctIlyFkKEeirWrnStoE3Sg" org.eventb.core.assignment="option ≔ {qs} ⩤ option" org.eventb.core.label="act1"/>
+<org.eventb.core.action name="_ctIlyVkKEeirWrnStoE3Sg" org.eventb.core.assignment="correct ≔ {qs} ⩤ correct" org.eventb.core.label="act2"/>
+<org.eventb.core.action name="_ctIlylkKEeirWrnStoE3Sg" org.eventb.core.assignment="question_num ≔ {qs} ⩤ question_num" org.eventb.core.label="act3"/>
+<org.eventb.core.action name="_ctIly1kKEeirWrnStoE3Sg" org.eventb.core.assignment="quiz_question ≔ quiz_question ▷ {qs}" org.eventb.core.label="act4"/>
+</org.eventb.core.event>
+<org.eventb.core.event name="_ctIlzFkKEeirWrnStoE3Sg" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="AnswerQuestion">
+<org.eventb.core.parameter name="_ctIlzVkKEeirWrnStoE3Sg" org.eventb.core.identifier="s"/>
+<org.eventb.core.parameter name="_ctIlzlkKEeirWrnStoE3Sg" org.eventb.core.identifier="u"/>
+<org.eventb.core.parameter name="_ctIlz1kKEeirWrnStoE3Sg" org.eventb.core.identifier="a"/>
+<org.eventb.core.guard name="_ctIl0FkKEeirWrnStoE3Sg" org.eventb.core.label="grd1" org.eventb.core.predicate="s ∈ session"/>
 </org.eventb.core.event>
 </org.eventb.core.machineFile>
