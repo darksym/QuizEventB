@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" org.eventb.texttools.text_lastmodified="1525347623809" org.eventb.texttools.text_representation="context C1&#10;sets USER QUIZ QUESTION SESSION ANSWER_OPTION&#10;end&#10;" version="3">
+<org.eventb.core.carrierSet name="_YoBTUE6-EeiRt8NzVHsCog" org.eventb.core.identifier="USER"/>
+<org.eventb.core.carrierSet name="_YoBTUU6-EeiRt8NzVHsCog" org.eventb.core.identifier="QUIZ"/>
+<org.eventb.core.carrierSet name="_YoB6YE6-EeiRt8NzVHsCog" org.eventb.core.identifier="QUESTION"/>
+<org.eventb.core.carrierSet name="_YoB6YU6-EeiRt8NzVHsCog" org.eventb.core.identifier="SESSION"/>
+<org.eventb.core.carrierSet name="_YoChcE6-EeiRt8NzVHsCog" org.eventb.core.identifier="ANSWER_OPTION"/>
+</org.eventb.core.contextFile>

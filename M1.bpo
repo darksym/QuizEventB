@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="2">
+<org.eventb.core.poIdentifier name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+<org.eventb.core.poIdentifier name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+<org.eventb.core.poIdentifier name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+<org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="11">
+<org.eventb.core.poIdentifier name="author" org.eventb.core.type="ℙ(QUIZ×USER)"/>
+<org.eventb.core.poIdentifier name="correct" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="current" org.eventb.core.type="ℙ(SESSION×QUESTION)"/>
+<org.eventb.core.poIdentifier name="given_answer" org.eventb.core.type="ℙ(USER×ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="host" org.eventb.core.type="ℙ(SESSION×USER)"/>
+<org.eventb.core.poIdentifier name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="participant" org.eventb.core.type="ℙ(SESSION×USER)"/>
+<org.eventb.core.poIdentifier name="question_num" org.eventb.core.type="ℙ(QUESTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+<org.eventb.core.poIdentifier name="quiz_question" org.eventb.core.type="ℙ(QUIZ×QUESTION)"/>
+<org.eventb.core.poIdentifier name="registered" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.poIdentifier name="session" org.eventb.core.type="ℙ(SESSION)"/>
+<org.eventb.core.poIdentifier name="session_quiz" org.eventb.core.type="ℙ(SESSION×QUIZ)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv9/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="given_answer∈USER ⇸ ANSWER_OPTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_gXoN4U6_EeiRt8NzVHsCoh"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_gXoN4U6_EeiRt8NzVHsCoh"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv12/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒finite({x} ◁ option)" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YrsE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YrsE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC="/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv14/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀q⦂QUESTION·q∈ran(quiz_question)⇒q∈dom(correct)∧correct∈QUESTION ⇸ ANSWER_OPTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC?"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="host'∈session' → (∅ ⦂ ℙ(USER))" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5W2gE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5W2gE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="author'∈(∅ ⦂ ℙ(QUIZ)) → (∅ ⦂ ℙ(USER))" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5XdkE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5XdkE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="participant'∈session' ↔ USER" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5XdkU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5XdkU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="session_quiz'∈session' → (∅ ⦂ ℙ(QUIZ))" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5WPcE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5WPcE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="current'∈session' → QUESTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5Z50E6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5Z50E6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv10/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="quiz_question'∈(∅ ⦂ ℙ(QUIZ)) ↔ QUESTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YEoE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YEoE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv10\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC=|org.eventb.core.poPredicate#PRD9"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv12/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option')≤4∧card({x} ◁ option')≥2" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YrsE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YrsE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC?|org.eventb.core.poPredicate#PRD11"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv13/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="correct'∈QUESTION → ANSWER_OPTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv13\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC?|org.eventb.core.poPredicate#PRD12"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv14/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀q⦂QUESTION·q∈ran(quiz_question')⇒correct'(q)∈option'[{q}]" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv14\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD13"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv15/INV" org.eventb.core.accurate="false" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="11">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTALLHYPquiz_questioo"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="question_num'∈QUESTION → ℕ" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_gXo08E6_EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_gXo08E6_EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poSequent#INITIALISATION\/inv15\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD14"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTquiz_questioo" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="11">
+<org.eventb.core.poIdentifier name="correct'" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="author'" org.eventb.core.type="ℙ(QUIZ×USER)"/>
+<org.eventb.core.poIdentifier name="registered'" org.eventb.core.type="ℙ(USER)"/>
+<org.eventb.core.poIdentifier name="option'" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="given_answer'" org.eventb.core.type="ℙ(USER×ANSWER_OPTION)"/>
+<org.eventb.core.poIdentifier name="session'" org.eventb.core.type="ℙ(SESSION)"/>
+<org.eventb.core.poIdentifier name="quiz_question'" org.eventb.core.type="ℙ(QUIZ×QUESTION)"/>
+<org.eventb.core.poIdentifier name="current'" org.eventb.core.type="ℙ(SESSION×QUESTION)"/>
+<org.eventb.core.poIdentifier name="participant'" org.eventb.core.type="ℙ(SESSION×USER)"/>
+<org.eventb.core.poIdentifier name="quiz'" org.eventb.core.type="ℙ(QUIZ)"/>
+<org.eventb.core.poIdentifier name="question_num'" org.eventb.core.type="ℙ(QUESTION×ℤ)"/>
+<org.eventb.core.poIdentifier name="session_quiz'" org.eventb.core.type="ℙ(SESSION×QUIZ)"/>
+<org.eventb.core.poIdentifier name="host'" org.eventb.core.type="ℙ(SESSION×USER)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPquiz_questioo" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTIDENTquiz_questioo" org.eventb.core.poStamp="11"/>
+<org.eventb.core.poSequent name="GiveAnswer/grd4/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTHYPquiz_questiop*"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="s∈dom(current)∧current∈SESSION ⇸ QUESTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_gXoN4E6_EeiRt8NzVHsCog"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_gXoN4E6_EeiRt8NzVHsCog"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTHYPquiz_questiop*"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTquiz_questiop" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="12">
+<org.eventb.core.poIdentifier name="q" org.eventb.core.type="QUESTION"/>
+<org.eventb.core.poIdentifier name="s" org.eventb.core.type="SESSION"/>
+<org.eventb.core.poIdentifier name="p" org.eventb.core.type="USER"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPquiz_questiop*" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTIDENTquiz_questiop" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="s∈session" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_X5bH8U6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="p∈USER" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_X5bvAE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="q∈ran(quiz_question)" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_X5bvAU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="p∈participant[{s}]" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_gXnm0E6_EeiRt8NzVHsCog"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPquiz_questiop" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#EVTHYPquiz_questiop*" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="q=current(s)" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.event#_X5Z50U6-EeiRt8NzVHsCog|org.eventb.core.guard#_gXoN4E6_EeiRt8NzVHsCog"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPC9" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="registered⊆USER" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5UaQE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="quiz⊆QUIZ" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5VoYE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="session⊆SESSION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5VoYU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="host∈session → registered" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5W2gE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="author∈quiz → registered" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5XdkE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="participant∈session ↔ USER" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5XdkU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="session_quiz∈session → quiz" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5WPcE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="current∈session → QUESTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5Z50E6-EeiRt8NzVHsCog"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPC=" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC9" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="given_answer∈USER ⇸ ANSWER_OPTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_gXoN4U6_EeiRt8NzVHsCoh"/>
+<org.eventb.core.poPredicate name="PRD9" org.eventb.core.predicate="quiz_question∈quiz ↔ QUESTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YEoE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD10" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YEoU6-EeiRt8NzVHsCog"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPC?" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC=" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD11" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5YrsE6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD12" org.eventb.core.predicate="correct∈QUESTION → ANSWER_OPTION" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwE6-EeiRt8NzVHsCog"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/Quiz/M1.bpo|org.eventb.core.poFile#M1|org.eventb.core.poPredicateSet#HYPC?" org.eventb.core.poStamp="12">
+<org.eventb.core.poPredicate name="PRD13" org.eventb.core.predicate="∀q⦂QUESTION·q∈ran(quiz_question)⇒correct(q)∈option[{q}]" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_X5ZSwU6-EeiRt8NzVHsCog"/>
+<org.eventb.core.poPredicate name="PRD14" org.eventb.core.predicate="question_num∈QUESTION → ℕ" org.eventb.core.source="/Quiz/M1.bum|org.eventb.core.machineFile#M1|org.eventb.core.invariant#_gXo08E6_EeiRt8NzVHsCog"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
