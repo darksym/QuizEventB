@@ -524,3 +524,214 @@ M2.bum: Left hand sides of assignments must be disjoint sets of variables
 
 !ENTRY de.prob.core 4 8 2018-05-17 23:39:45.036
 !MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:43:08.272
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Variable question_num does not have a type
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M1.bum: Types ℙ(USER×INFORMATION) and '0×'1 do not match
+M1.bum: Types ℙ(USER×INFORMATION) and '1×'2 do not match
+M1.bum: Parameter p does not have a type
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:43:08.315
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:44:59.238
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M1.bum: Types USER and ℙ('1) do not match
+M1.bum: Parameter p does not have a type
+M1.bum: Variable question_num does not have a type
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:44:59.274
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:46:13.304
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:46:13.340
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:47:06.458
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:47:06.495
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:47:54.660
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Types USER×INFORMATION and ℙ(USER×INFORMATION) do not match
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:47:54.703
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:48:23.992
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER and ℙ('1) do not match
+M1.bum: Parameter p does not have a type
+M1.bum: Variable question_num does not have a type
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:48:24.027
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
