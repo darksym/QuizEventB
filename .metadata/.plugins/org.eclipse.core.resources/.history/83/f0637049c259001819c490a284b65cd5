@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="inv12/WD" org.eventb.core.confidence="0" org.eventb.core.prFresh="x" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ANSWER_OPTION,QUESTION">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p6">
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees x)" org.eventb.core.prGoal="p6" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p7">
+                                <org.eventb.core.prIdent name="x" org.eventb.core.type="QUESTION"/>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="registered⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒finite({x} ◁ option)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="finite({x} ◁ option)">
+            <org.eventb.core.prIdent name="x" org.eventb.core.type="QUESTION"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀x⦂QUESTION·finite({x} ◁ option)"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒finite({x} ◁ option)"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="inv14/WD" org.eventb.core.confidence="1000" org.eventb.core.prFresh="q" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1" org.eventb.core.prSets="ANSWER_OPTION,QUESTION,QUIZ">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p6" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∀ goal (frees q)" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p10">
+                                <org.eventb.core.prIdent name="q" org.eventb.core.type="QUESTION"/>
+                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p10" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="p11">
+                                        <org.eventb.core.prRule name="r4" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="∧ goal" org.eventb.core.prGoal="p12" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p13">
+                                                <org.eventb.core.prRule name="r5" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="total function dom substitution in goal" org.eventb.core.prGoal="p13" org.eventb.core.prHyps="p1">
+                                                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p14">
+                                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p14" org.eventb.core.prHyps="">
+                                                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p15">
+                                                                <org.eventb.core.prRule name="r6" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p15" org.eventb.core.prHyps=""/>
+                                                            </org.eventb.core.prAnte>
+                                                        </org.eventb.core.prRule>
+                                                    </org.eventb.core.prAnte>
+                                                    <org.eventb.core.prString name=".pos" org.eventb.core.prSValue="1"/>
+                                                    <org.eventb.core.prExprRef name=".subst" org.eventb.core.prRef="e0"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                            <org.eventb.core.prAnte name="(" org.eventb.core.prGoal="p16">
+                                                <org.eventb.core.prRule name="r7" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="functional goal" org.eventb.core.prGoal="p16" org.eventb.core.prHyps="p1"/>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="correct" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        <org.eventb.core.prIdent name="quiz_question" org.eventb.core.type="ℙ(QUIZ×QUESTION)"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="registered⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="q∈QUESTION">
+            <org.eventb.core.prIdent name="q" org.eventb.core.type="QUESTION"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="correct∈QUESTION → ANSWER_OPTION"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="q∈ran(quiz_question)">
+            <org.eventb.core.prIdent name="q" org.eventb.core.type="QUESTION"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀q⦂QUESTION·q∈ran(quiz_question)⇒q∈dom(correct)∧correct∈QUESTION ⇸ ANSWER_OPTION"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="q∈dom(correct)∧correct∈QUESTION ⇸ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="q" org.eventb.core.type="QUESTION"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="q∈dom(correct)">
+            <org.eventb.core.prIdent name="q" org.eventb.core.type="QUESTION"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="q∈ran(quiz_question)⇒q∈dom(correct)∧correct∈QUESTION ⇸ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="q" org.eventb.core.type="QUESTION"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="correct∈QUESTION ⇸ ANSWER_OPTION"/>
+        <org.eventb.core.prExpr name="e0" org.eventb.core.expression="QUESTION"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="org.eventb.core.seqprover.impI"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r4" org.eventb.core.prRID="org.eventb.core.seqprover.conj:0"/>
+        <org.eventb.core.prReas name="r7" org.eventb.core.prRID="org.eventb.core.seqprover.isFunGoal"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.allI"/>
+        <org.eventb.core.prReas name="r5" org.eventb.core.prRID="org.eventb.core.seqprover.totalDom:2"/>
+        <org.eventb.core.prReas name="r6" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="SESSION,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SESSION×USER))∈(∅ ⦂ ℙ(SESSION)) → (∅ ⦂ ℙ(USER))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="QUIZ,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(QUIZ×USER))∈(∅ ⦂ ℙ(QUIZ)) → (∅ ⦂ ℙ(USER))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv6/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="SESSION,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SESSION×USER))∈(∅ ⦂ ℙ(SESSION)) ↔ USER"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="QUIZ,SESSION">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SESSION×QUIZ))∈(∅ ⦂ ℙ(SESSION)) → (∅ ⦂ ℙ(QUIZ))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv8/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="QUESTION,SESSION">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SESSION×QUESTION))∈(∅ ⦂ ℙ(SESSION)) → QUESTION"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv9/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ANSWER_OPTION,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER×ANSWER_OPTION))∈USER ⇸ ANSWER_OPTION"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalML:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="QUESTION,QUIZ">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(QUIZ×QUESTION))∈(∅ ⦂ ℙ(QUIZ)) ↔ QUESTION"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv12/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ANSWER_OPTION,QUESTION">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prGoal="p1" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p2">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p2" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="⊥"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="∀x⦂QUESTION·¬x∈QUESTION"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ (∅ ⦂ ℙ(QUESTION×ANSWER_OPTION)))≤4∧card({x} ◁ (∅ ⦂ ℙ(QUESTION×ANSWER_OPTION)))≥2"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="¬⊤"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv13/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv14/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="ANSWER_OPTION,QUESTION,QUIZ">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="∀q⦂QUESTION·q∈ran(∅ ⦂ ℙ(QUIZ×QUESTION))⇒(∅ ⦂ ℙ(QUESTION×ANSWER_OPTION))(q)∈(∅ ⦂ ℙ(QUESTION×ANSWER_OPTION))[{q}]"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv15/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv16/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="SESSION,SUMMARY">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(SESSION×SUMMARY))∈(∅ ⦂ ℙ(SESSION)) → SUMMARY"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv17/INV"/>
+    <org.eventb.core.prProof name="INITIALISATION/inv19/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="PASSWORD,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(USER×PASSWORD)))⊆(∅ ⦂ ℙ(USER)) → PASSWORD"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv21/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(USER))⊆(∅ ⦂ ℙ(USER))"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="INITIALISATION/inv22/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="" org.eventb.core.prSets="QUIZ,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p1">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⊤ goal" org.eventb.core.prGoal="p1" org.eventb.core.prHyps=""/>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="(∅ ⦂ ℙ(ℙ(USER×QUIZ)))⊆(∅ ⦂ ℙ(USER)) → (∅ ⦂ ℙ(QUIZ))"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="⊤"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.trueGoal"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreateQuiz/inv5/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="registered⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreateQuiz/inv7/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="QUIZ,SESSION,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1,p3">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="q" org.eventb.core.type="QUIZ"/>
+        <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        <org.eventb.core.prIdent name="session_quiz" org.eventb.core.type="ℙ(SESSION×QUIZ)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="quiz⊆QUIZ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="session_quiz∈session → quiz∪{q}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="q∈QUIZ ∖ quiz"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="session⊆SESSION"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="session_quiz∈session → quiz"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreateQuiz/inv10/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="QUESTION,QUIZ,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="q" org.eventb.core.type="QUIZ"/>
+        <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        <org.eventb.core.prIdent name="quiz_question" org.eventb.core.type="ℙ(QUIZ×QUESTION)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="quiz⊆QUIZ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="quiz_question∈quiz ↔ QUESTION"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="q∈QUIZ ∖ quiz"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="quiz_question∈quiz∪{q} ↔ QUESTION"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="CreateQuiz/inv22/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3" org.eventb.core.prSets="QUIZ,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p11"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p9" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p12,p13"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1,p3">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="contains" org.eventb.core.type="ℙ(ℙ(USER×QUIZ))"/>
+        <org.eventb.core.prIdent name="q" org.eventb.core.type="QUIZ"/>
+        <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="quiz⊆QUIZ"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="contains⊆registered → quiz"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="q∈QUIZ ∖ quiz"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="contains⊆registered → quiz∪{q}"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RegisterUser/inv4/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="SESSION,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="host" org.eventb.core.type="ℙ(SESSION×USER)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="host∈session → registered"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="session⊆SESSION"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="host∈session → registered∪{u}"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈USER ∖ registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RegisterUser/inv5/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="QUIZ,USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="author" org.eventb.core.type="ℙ(QUIZ×USER)"/>
+        <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="quiz⊆QUIZ"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="author∈quiz → registered∪{u}"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="author∈quiz → registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈USER ∖ registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RegisterUser/inv19/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p7"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8,p9"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="registered⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RegisterUser/inv21/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="activeUser⊆USER"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="activeUser⊆registered∪{u}"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="activeUser⊆registered"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="u∈USER ∖ registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="RegisterUser/inv22/INV" org.eventb.core.confidence="0" org.eventb.core.prFresh="" org.eventb.core.prHyps="">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p0"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p1"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p2"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p4" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p5" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p7,p8"/>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="activeUser⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="registered⊆USER">
+            <org.eventb.core.prIdent name="USER" org.eventb.core.type="ℙ(USER)"/>
+            <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="UserLogin/inv21/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p3">
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="generalized MP" org.eventb.core.prGoal="p3" org.eventb.core.prHyps="p2">
+                    <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p4">
+                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prGoal="p4" org.eventb.core.prHyps="">
+                            <org.eventb.core.prAnte name="'" org.eventb.core.prGoal="p5">
+                                <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+                                    <org.eventb.core.prAnte name="'">
+                                        <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p6"/>
+                                        <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p7"/>
+                                        <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p8"/>
+                                        <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p9"/>
+                                        <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p10" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11"/>
+                                        <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p12"/>
+                                        <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p13"/>
+                                        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                                            <org.eventb.core.prAnte name="'">
+                                                <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p11" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p14,p15"/>
+                                                <org.eventb.core.prRule name="r3" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p5" org.eventb.core.prHyps="p2,p1">
+                                                    <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                                                </org.eventb.core.prRule>
+                                            </org.eventb.core.prAnte>
+                                        </org.eventb.core.prRule>
+                                    </org.eventb.core.prAnte>
+                                </org.eventb.core.prRule>
+                            </org.eventb.core.prAnte>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="activeUser⊆USER"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="activeUser∪{u}⊆registered"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈registered ∖ activeUser"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="u∈registered"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="activeUser⊆registered"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="⊤∧u∈registered"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="activeUser⊆registered∧u∈registered"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r3" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.genMPL3"/>
+    </org.eventb.core.prProof>
+    <org.eventb.core.prProof name="UserLogout/inv21/INV" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2" org.eventb.core.prSets="USER">
+        <org.eventb.core.lang name="L"/>
+        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="type rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="'">
+                <org.eventb.core.prHypAction name="HIDE0" org.eventb.core.prHyps="p3"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p4"/>
+                <org.eventb.core.prHypAction name="HIDE2" org.eventb.core.prHyps="p5"/>
+                <org.eventb.core.prHypAction name="HIDE3" org.eventb.core.prHyps="p6"/>
+                <org.eventb.core.prHypAction name="REWRITE4" org.eventb.core.prHidden="p7" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p8"/>
+                <org.eventb.core.prHypAction name="HIDE5" org.eventb.core.prHyps="p9"/>
+                <org.eventb.core.prHypAction name="HIDE6" org.eventb.core.prHyps="p10"/>
+                <org.eventb.core.prRule name="r1" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="'">
+                        <org.eventb.core.prHypAction name="REWRITE0" org.eventb.core.prHidden="p8" org.eventb.core.prHyps="" org.eventb.core.prInfHyps="p11,p12"/>
+                        <org.eventb.core.prRule name="r2" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="PP" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p2,p1">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="R500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="activeUser" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="registered" org.eventb.core.type="ℙ(USER)"/>
+        <org.eventb.core.prIdent name="u" org.eventb.core.type="USER"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="quiz⊆QUIZ">
+            <org.eventb.core.prIdent name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+            <org.eventb.core.prIdent name="quiz" org.eventb.core.type="ℙ(QUIZ)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="activeUser⊆USER"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="registered⊆USER"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="password⊆PASSWORD">
+            <org.eventb.core.prIdent name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+            <org.eventb.core.prIdent name="password" org.eventb.core.type="ℙ(PASSWORD)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≤4">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="∀x⦂QUESTION·card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="session⊆SESSION">
+            <org.eventb.core.prIdent name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+            <org.eventb.core.prIdent name="session" org.eventb.core.type="ℙ(SESSION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="option∈QUESTION ↔ ANSWER_OPTION">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="∀x⦂QUESTION·x∈QUESTION⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="u∈activeUser"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="activeUser⊆registered"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="∀x⦂QUESTION·⊤⇒card({x} ◁ option)≤4∧card({x} ◁ option)≥2">
+            <org.eventb.core.prIdent name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+            <org.eventb.core.prIdent name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+            <org.eventb.core.prIdent name="option" org.eventb.core.type="ℙ(QUESTION×ANSWER_OPTION)"/>
+        </org.eventb.core.prPred>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="activeUser ∖ {u}⊆registered"/>
+        <org.eventb.core.prReas name="r1" org.eventb.core.prRID="org.eventb.core.seqprover.autoRewritesL4:0"/>
+        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.typeRewrites:1"/>
+        <org.eventb.core.prReas name="r2" org.eventb.core.prRID="com.clearsy.atelierb.provers.core.externalPP:1"/>
+    </org.eventb.core.prProof>
+</org.eventb.core.prFile>

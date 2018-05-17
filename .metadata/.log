@@ -1,0 +1,65 @@
+!SESSION 2018-05-17 11:56:11.911 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=10
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-05-17 11:56:39.048
+!MESSAGE Both 'ac.soton.eventb.xtext.context.ui' and 'ac.soton.xeventb.xcontext.ui' register an extension parser for 'bucx'
+
+!ENTRY org.eclipse.emf.ecore 2 0 2018-05-17 11:56:39.054
+!MESSAGE Both 'ac.soton.eventb.xtext.machine.ui' and 'ac.soton.xeventb.xmachine.ui' register an extension parser for 'bumx'
+
+!ENTRY org.eclipse.ui 4 4 2018-05-17 11:56:40.099
+!MESSAGE Conflicting handlers for ac.soton.eventb.xtext.ui.XTextConvert: {ac.soton.xeventb.internal.ui.XTextConvertHandler} vs {ac.soton.eventb.internal.xtext.ui.XTextConvertHandler}
+
+!ENTRY org.eclipse.ui 4 4 2018-05-17 11:57:25.230
+!MESSAGE Conflicting handlers for ac.soton.eventb.xtext.ui.XTextConvert: {ac.soton.xeventb.internal.ui.XTextConvertHandler} vs {ac.soton.eventb.internal.xtext.ui.XTextConvertHandler}
+
+!ENTRY de.prob.core 1 0 2018-05-17 11:57:26.390
+!MESSAGE Starting ProB CLI for win32 ... Path is C:\Program Files\rodin\plugins\de.prob.core_9.4.3.201707171501\prob\windows\probcli.exe
+
+!ENTRY de.prob.core 1 0 2018-05-17 11:57:27.158
+!MESSAGE Server has startet and listens on port 53679
+
+!ENTRY de.prob.core 1 0 2018-05-17 11:57:27.163
+!MESSAGE Server can receive user interrupts via reference 6396
+
+!ENTRY org.eclipse.ui 4 4 2018-05-17 11:57:53.472
+!MESSAGE Conflicting handlers for ac.soton.eventb.xtext.ui.XTextConvert: {ac.soton.xeventb.internal.ui.XTextConvertHandler} vs {ac.soton.eventb.internal.xtext.ui.XTextConvertHandler}
+
+!ENTRY de.prob.core 4 8 2018-05-17 12:06:58.758
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Unknown operator: )
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 12:21:23.175
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY org.eclipse.core.resources 4 376 2018-05-17 12:24:59.300
+!MESSAGE Marker id 465 not found.
+
+!ENTRY org.eclipse.core.resources 4 376 2018-05-17 12:24:59.312
+!MESSAGE Marker id 466 not found.
+
+!ENTRY org.eclipse.core.resources 4 376 2018-05-17 12:24:59.324
+!MESSAGE Marker id 467 not found.
+
+!ENTRY org.eclipse.core.resources 4 376 2018-05-17 12:24:59.343
+!MESSAGE Marker id 475 not found.
+
+!ENTRY org.eclipse.core.resources 4 376 2018-05-17 12:24:59.350
+!MESSAGE Marker id 476 not found.
+
+!ENTRY de.prob.core 2 8 2018-05-17 12:25:33.149
+!MESSAGE Some components in your project contain warnings. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 12:25:33.204
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour

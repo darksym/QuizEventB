@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scContextFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scCarrierSet name="ANSWER_OPTION" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGDfEVm2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+    <org.eventb.core.scCarrierSet name="PASSWORD" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGDfE1m2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(PASSWORD)"/>
+    <org.eventb.core.scCarrierSet name="QUESTION" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGC4Alm2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(QUESTION)"/>
+    <org.eventb.core.scCarrierSet name="QUIZ" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGC4AVm2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(QUIZ)"/>
+    <org.eventb.core.scCarrierSet name="SESSION" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGDfEFm2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(SESSION)"/>
+    <org.eventb.core.scCarrierSet name="SUMMARY" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGDfElm2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(SUMMARY)"/>
+    <org.eventb.core.scCarrierSet name="USER" org.eventb.core.source="/wit/C1.buc|org.eventb.core.contextFile#C1|org.eventb.core.carrierSet#_iGC4AFm2EeisUZWzqNV0PA" org.eventb.core.type="ℙ(USER)"/>
+</org.eventb.core.scContextFile>

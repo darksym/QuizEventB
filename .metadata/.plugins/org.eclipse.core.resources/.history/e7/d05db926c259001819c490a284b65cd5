@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="ANSWER_OPTION" org.eventb.core.type="ℙ(ANSWER_OPTION)"/>
+        <org.eventb.core.poIdentifier name="PASSWORD" org.eventb.core.type="ℙ(PASSWORD)"/>
+        <org.eventb.core.poIdentifier name="QUESTION" org.eventb.core.type="ℙ(QUESTION)"/>
+        <org.eventb.core.poIdentifier name="QUIZ" org.eventb.core.type="ℙ(QUIZ)"/>
+        <org.eventb.core.poIdentifier name="SESSION" org.eventb.core.type="ℙ(SESSION)"/>
+        <org.eventb.core.poIdentifier name="SUMMARY" org.eventb.core.type="ℙ(SUMMARY)"/>
+        <org.eventb.core.poIdentifier name="USER" org.eventb.core.type="ℙ(USER)"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/wit/C1.bpo|org.eventb.core.poFile#C1|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1"/>
+</org.eventb.core.poFile>

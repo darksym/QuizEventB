@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.prFile version="1">
+    <org.eventb.core.prProof name="INITIALISATION/act1/SIM"/>
+    <org.eventb.core.prProof name="INITIALISATION/act2/SIM"/>
+    <org.eventb.core.prProof name="INITIALISATION/act3/SIM"/>
+    <org.eventb.core.prProof name="INITIALISATION/act16/SIM"/>
+    <org.eventb.core.prProof name="INITIALISATION/act17/SIM"/>
+    <org.eventb.core.prProof name="INITIALISATION/act18/SIM"/>
+    <org.eventb.core.prProof name="INITIALISATION/act19/SIM"/>
+</org.eventb.core.prFile>
