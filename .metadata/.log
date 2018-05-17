@@ -846,3 +846,901 @@ M2.bum: Identifier p has a faulty declaration
 
 !ENTRY de.prob.core 4 8 2018-05-17 23:56:17.485
 !MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:57:24.252
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER and ℙ('1) do not match
+M1.bum: Parameter p does not have a type
+M1.bum: Variable question_num does not have a type
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:57:24.287
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:58:33.240
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Types USER and ℙ('2) do not match
+M1.bum: Variable question_num does not have a type
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER and ℙ('1) do not match
+M1.bum: Parameter p does not have a type
+M1.bum: Types QUIZ and ℙ('1) do not match
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:58:33.284
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:59:07.427
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:59:07.468
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:59:58.678
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Variable question_num does not have a type
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER and ℙ('1) do not match
+M1.bum: Parameter p does not have a type
+M1.bum: Types QUIZ and ℙ('1) do not match
+M1.bum: Types USER and ℙ('2) do not match
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+
+
+!ENTRY de.prob.core 4 8 2018-05-17 23:59:58.728
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:00:46.354
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:00:46.393
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:02:04.494
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Variable question_num does not have a type
+M1.bum: Variable question_summary does not have a type
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Type unknown
+M1.bum: Assignment to event parameter p
+M1.bum: Types USER and ℙ('1) do not match
+M1.bum: Parameter p does not have a type
+M1.bum: Types QUIZ and ℙ('1) do not match
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:02:04.545
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:03:36.894
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:03:41.324
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:03:45.749
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:03:57.122
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:04:15.072
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:04:26.972
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:05:55.032
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Variable author does not have a type
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous declaration of parameter p
+M2.bum: Ambiguous declaration of parameter p in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Left hand sides of assignments must be disjoint sets of variables
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:05:55.069
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:07:00.389
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Variable author does not have a type
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:07:00.449
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:07:43.632
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Variable author does not have a type
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:07:43.667
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:10:57.981
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Types USER and INFORMATION do not match
+M2.bum: Types INFORMATION and USER do not match
+M2.bum: Variable author does not have a type
+M2.bum: Variable contains does not have a type
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:10:58.013
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:12:08.396
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Types USER and INFORMATION do not match
+M2.bum: Types INFORMATION and USER do not match
+M2.bum: Variable author does not have a type
+M2.bum: Variable contains does not have a type
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:12:08.433
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:13:21.979
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Types USER and INFORMATION do not match
+M2.bum: Types INFORMATION and USER do not match
+M2.bum: Variable author does not have a type
+M2.bum: Variable contains does not have a type
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:13:22.011
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:14:01.431
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Types USER and INFORMATION do not match
+M2.bum: Types INFORMATION and USER do not match
+M2.bum: Variable author does not have a type
+M2.bum: Variable contains does not have a type
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:14:01.462
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:16:08.642
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:16:12.506
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:16:23.520
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Types USER and INFORMATION do not match
+M2.bum: Types INFORMATION and USER do not match
+M2.bum: Variable author does not have a type
+M2.bum: Variable contains does not have a type
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:16:23.555
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
+
+!ENTRY org.eventb.ui.symboltable 4 4 2018-05-18 00:17:43.972
+!MESSAGE While executing command org.eventb.ui.edit.insert
+!STACK 0
+org.eclipse.core.commands.NotEnabledException: Trying to execute the disabled command org.eventb.ui.edit.insert
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:485)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:488)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.ui.internal.handlers.LegacyHandlerService.executeCommand(LegacyHandlerService.java:353)
+	at org.eventb.ui.symboltable.internal.ClickListener.mouseUp(ClickListener.java:62)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:221)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4418)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4236)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3824)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:693)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:610)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1492)
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:18:30.580
+!MESSAGE Some components in your project contain errors. This can lead to unexpected behavior (e.g. missing variables) when animating.
+
+Details:
+M1.bum: Premature End Of Formula
+M2.bum: Type unknown
+M2.bum: Ambiguous declaration of parameter i
+M2.bum: Ambiguous declaration of parameter i in abstract event M1
+M2.bum: Ambiguous guard label grd10
+M2.bum: Ambiguous guard label grd10
+M2.bum: Parameter p does not have a type
+M2.bum: Ambiguous action label act5
+M2.bum: Ambiguous action label act5
+M2.bum: Syntax error: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Ambiguous declaration of parameter u
+M2.bum: Ambiguous declaration of parameter u in abstract event M1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Ambiguous guard label grd1
+M2.bum: Types USER and ℙ('1) do not match
+M2.bum: Parameter p does not have a type
+M2.bum: Identifier p has a faulty declaration
+M2.bum: Unknown operator:  (expected to find an assignment operator)
+M2.bum: Context C1 seen by abstract machine but not refined machine. Context added
+M2.bum: Types USER and INFORMATION do not match
+M2.bum: Types INFORMATION and USER do not match
+M2.bum: Variable author does not have a type
+M2.bum: Variable contains does not have a type
+M2.bum: Abstract event UserLogout not refined, although not disabled
+M2.bum: Abstract event CreateQuiz not refined, although not disabled
+M2.bum: Type unknown
+M2.bum: Type unknown
+M2.bum: Type unknown
+
+
+!ENTRY de.prob.core 4 8 2018-05-18 00:18:30.612
+!MESSAGE The machine contains Rodin Problems. ProB will continue, but you may observe unexpected behaviour
